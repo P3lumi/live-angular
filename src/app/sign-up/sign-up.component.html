@@ -1,0 +1,69 @@
+<div class="container">
+
+    <div class="head">
+        <h3> Welcome Decadev ! </h3>
+        <h6 class="italics">Fill in the correct details below</h6>
+    </div>
+        
+        <div class="name-container">
+            <h5 class="name"> First Name</h5>
+            <input class="namefield" type="text" required>
+            
+            <h5 class="name"> Last Name</h5>
+            <input class="namefield" type="text" required>
+        </div>
+        
+        <h5 class="name"> DecaDev's Email </h5>
+        <input class="namefield" type="text" required>
+        
+        <div class="select-container">
+            <h5 class="name">Gender</h5>
+            <select class="option" name="subject">
+                <option disabled="disabled" selected="selected"> Male </option>
+                <option>Female</option>
+            </select>
+        
+            <h5 class="name">Stack</h5>
+            <select class="option" name="subject">
+                <option disabled="disabled" selected="selected"> Java </option>
+                <option>Andriod</option>
+                <option>GoLang</option>
+                <option>iOS</option>
+                <option>.Net</option>
+                <option>Node</option>
+                <option>Python</option> 
+            </select>
+        
+            <h5 class="name">Squad</h5>
+            <select class="option" name="subject">
+                <option disabled="disabled" selected="selected"> Sq001 </option>
+                <option>Sq002</option>
+                <option>Sq003</option>
+                <option>Sq004</option>
+                <option>Sq005</option>
+                <option>Sq006</option>
+                <option>Sq007</option> 
+                <option>Sq008</option> 
+                <option>Sq009</option> 
+                <option>Sq010</option> 
+                <option>Sq011</option> 
+            </select>
+        
+            <h5 class="name"> Password </h5>
+            <input class="namefield" type="text">
+        
+            <h5 class="name"> Confirm Password </h5>
+            <input class="namefield" type="text">
+        
+            <div class="buttonn">
+                <button class="signup" type="submit">Sign Up</button>
+                <button class="cancel" type="submit">Cancel</button>
+            </div>
+        
+            <div class="signup_link">
+                Already have an account? <a [routerLink]="['/registration']" routerLinkActive="router-link-active"> Login </a>
+            </div>
+        
+        </div>
+
+</div>

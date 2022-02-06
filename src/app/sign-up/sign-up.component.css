@@ -1,0 +1,16 @@
+.container{
+    position: absolute;
+    left: 40%;
+    width: 400px;
+    background: red;
+    border-radius: 10px;
+}
+
+.name-container{
+    display: inline-block;
+    padding-right: 70px;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    color:black; 
+}
