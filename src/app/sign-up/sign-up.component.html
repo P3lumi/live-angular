@@ -1,69 +1,87 @@
 <div class="container">
 
     <div class="head">
-        <h3> Welcome Decadev ! </h3>
-        <h6 class="italics">Fill in the correct details below</h6>
+        <h1 class="title">Welcome Decadev!</h1>
+        <p class="instruction">Fill in the correct details below</p>
     </div>
         
-        <div class="name-container">
-            <h5 class="name"> First Name</h5>
-            <input class="namefield" type="text" required>
+    <div class="name-container">
+        <label for="firstName" class="name">First Name
+            <input class="namefield" id="firstName" type="text" required/>
             
-            <h5 class="name"> Last Name</h5>
-            <input class="namefield" type="text" required>
-        </div>
-        
-        <h5 class="name"> DecaDev's Email </h5>
-        <input class="namefield" type="text" required>
+        </label>
+        <label for="lastName" class="name">Last Name
+            <input class="namefield" id="lastName" type="text" required>
+        </label>
+    </div>
+    
+    <div>
+        <label for="email" class="name">DecaDev's Email </label>
+        <input class="" id="email" type="email" required>
+    </div>
         
         <div class="select-container">
-            <h5 class="name">Gender</h5>
-            <select class="option" name="subject">
-                <option disabled="disabled" selected="selected"> Male </option>
-                <option>Female</option>
-            </select>
+            <div>
+                <p><label for="gender" class="named">Gender</label></p>
+                <select name="gender" class="option one">
+                    <option  disabled="disabled" selected="selected">--Choose one--</option>
+                    <option> Male </option>
+                    <option>Female</option>
+                </select>
+            </div>
+            
+            <div>
+                <p><label for="stack" class="named">Stack</label></p>
+                <select name="stack" class="option two">
+                    <option  disabled="disabled" selected="selected">--Choose one--</option>
+                    <option> Java </option>
+                    <option>Andriod</option>
+                    <option>GoLang</option>
+                    <option>iOS</option>
+                    <option>.Net</option>
+                    <option>Node</option>
+                    <option>Python</option> 
+                </select>
+            </div>
+
+            <div>
+                <p><label for="squad" class="named">Squad</label></p>
+                <select name="squad" class="option three">
+                    <option  disabled="disabled" selected="selected">--Choose one--</option>
+                    <option> Sq001 </option>
+                    <option>Sq002</option>
+                    <option>Sq003</option>
+                    <option>Sq004</option>
+                    <option>Sq005</option>
+                    <option>Sq006</option>
+                    <option>Sq007</option> 
+                    <option>Sq008</option> 
+                    <option>Sq009</option> 
+                    <option>Sq010</option> 
+                    <option>Sq011</option> 
+                </select>
+            </div>
+        </div>
         
-            <h5 class="name">Stack</h5>
-            <select class="option" name="subject">
-                <option disabled="disabled" selected="selected"> Java </option>
-                <option>Andriod</option>
-                <option>GoLang</option>
-                <option>iOS</option>
-                <option>.Net</option>
-                <option>Node</option>
-                <option>Python</option> 
-            </select>
+        <div>
+            <label class="name">Password </label>
+            <input class="namefield" type="password">
         
-            <h5 class="name">Squad</h5>
-            <select class="option" name="subject">
-                <option disabled="disabled" selected="selected"> Sq001 </option>
-                <option>Sq002</option>
-                <option>Sq003</option>
-                <option>Sq004</option>
-                <option>Sq005</option>
-                <option>Sq006</option>
-                <option>Sq007</option> 
-                <option>Sq008</option> 
-                <option>Sq009</option> 
-                <option>Sq010</option> 
-                <option>Sq011</option> 
-            </select>
-        
-            <h5 class="name"> Password </h5>
-            <input class="namefield" type="text">
-        
-            <h5 class="name"> Confirm Password </h5>
-            <input class="namefield" type="text">
-        
+            <label class="name">Confirm Password </label>
+            <input class="namefield" type="password">
+        </div>
             <div class="buttonn">
-                <button class="signup" type="submit">Sign Up</button>
+                <button class="signup" type="submit" > <a [routerLink]="['/emailverification']" routerLinkActive="router-link-active"> Sign Up</a></button>
                 <button class="cancel" type="submit">Cancel</button>
             </div>
         
-            <div class="signup_link">
+            <div class="login_link">
                 Already have an account? <a [routerLink]="['/registration']" routerLinkActive="router-link-active"> Login </a>
             </div>
         
-        </div>
 
 </div>
+    
+        
+
+
